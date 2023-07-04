@@ -15,7 +15,7 @@ class DateTimeSrevice {
               onDateTimeChanged: onDateTimeChanged,
               initialDateTime: DateTime.now(),
               minimumYear: 2000,
-              maximumYear: 3000,
+              maximumYear: 2025,
             ),
           );
         });
