@@ -26,6 +26,15 @@ class HomeView extends StatelessWidget {
           } else if (snapshot.hasError) {
             return Text(snapshot.error.toString());
           } else if (snapshot.hasData) {
+            ListView.builder(itemBuilder: (BuildContext context, int index) {
+              return Container(
+                width: 60,
+                height: 60,
+                decoration: const BoxDecoration(
+                    shape: BoxShape.circle, color: Color(0xFFe0f2f1)),
+                child: Text(index.toString()),
+              );
+            });
             final List<Information> product = snapshot.data!.docs
                 .map((e) =>
                     Information.fromMap(e.data() as Map<String, dynamic>))
