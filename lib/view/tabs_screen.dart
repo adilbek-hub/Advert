@@ -3,8 +3,6 @@ import 'package:advertt/view/taxi_screen.dart';
 import 'package:advertt/view/car_sell_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../models/color_text_model.dart';
-
 class HomeView2 extends StatefulWidget {
   const HomeView2({super.key});
 
@@ -26,11 +24,15 @@ class _HomeView2State extends State<HomeView2> {
         length: _tabs.length,
         child: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.white,
             bottom: const TabBar(
               isScrollable: true,
               tabs: [
                 Tab(
-                  icon: Icon(Icons.local_taxi),
+                  icon: Icon(
+                    Icons.local_taxi,
+                    color: Colors.black,
+                  ),
                   text: 'Такси',
                 ),
                 Tab(
@@ -38,11 +40,11 @@ class _HomeView2State extends State<HomeView2> {
                   text: 'Мал сатуу',
                 ),
                 Tab(
-                  icon: Icon(Icons.person),
+                  icon: Icon(Icons.car_rental_sharp),
                   text: 'Машина сатуу',
                 ),
                 Tab(
-                  icon: Icon(Icons.person),
+                  icon: Icon(Icons.home),
                   text: 'Мүлк сатуу',
                 ),
               ],
