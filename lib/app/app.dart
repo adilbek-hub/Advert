@@ -1,4 +1,4 @@
-import 'package:advertt/view/home_view_2.dart';
+import 'package:advertt/view/tabs_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {

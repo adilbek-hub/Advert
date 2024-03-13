@@ -13,30 +13,30 @@ class PickOn {
 }
 
 PickOn taxi = const PickOn(
-  colors: Colors.grey,
+  colors: Colors.yellow,
   text: 'Такси',
   icons: Icons.local_taxi,
 );
 
 PickOn petAnimals = const PickOn(
-  colors: Colors.grey,
+  colors: Colors.indigo,
   text: 'Мал сатуу',
   icons: Icons.local_taxi,
 );
 
 PickOn carSell = const PickOn(
-  colors: Colors.grey,
+  colors: Colors.green,
   text: 'Унаа сатуу',
   icons: Icons.local_taxi,
 );
 
 PickOn houseSell = const PickOn(
-  colors: Colors.grey,
+  colors: Colors.teal,
   text: 'Үй сатуу',
   icons: Icons.local_taxi,
 );
 PickOn propertySell = const PickOn(
-  colors: Colors.grey,
+  colors: Colors.purple,
   text: 'Мүлк сатуу',
   icons: Icons.local_taxi,
 );
