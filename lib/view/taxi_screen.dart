@@ -8,47 +8,53 @@ class TaxiScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-        body: SingleChildScrollView(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          SizedBox(height: 20),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            SizedBox(height: 20),
+            Text(
+              'ЧАЕКТЕН БИШКЕККЕ КЕТҮҮЧҮ ТАКСИЛЕР',
+            ),
+            SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              height: 350,
+              child: ChaekBishkekScroll(),
+            ),
+            SizedBox(height: 20),
+            Text(
+              'БИШКЕКТЕН ЧАЕККЕ КЕТҮҮЧҮ ТАКСИЛЕР',
+            ),
+            SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              height: 350,
+              child: ChaekBishkekScroll(),
+            ),
+            SizedBox(height: 20),
+            Text(
+              'ЖУМГАЛ РАЙОНУНУН ИЧИНДЕ ЖҮРҮҮЧҮ ТАКСИЛЕР',
+            ),
+            SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              height: 350,
+              child: ChaekBishkekScroll(),
+            ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
           Text(
-            'ЧАЕКТЕН БИШКЕККЕ КЕТҮҮЧҮ ТАКСИЛЕР',
-          ),
-          SizedBox(height: 30),
-          SizedBox(
-            width: double.infinity,
-            height: 350,
-            child: ChaekBishkekScroll(),
-          ),
-          SizedBox(height: 10),
-          Text('БИШКЕКТЕН ЧАЕККЕ КЕТҮҮЧҮ ТАКСИЛЕР'),
-          SizedBox(height: 30),
-          SizedBox(
-            width: double.infinity,
-            height: 300,
-            child: ChaekBishkekScroll(),
-          ),
-          SizedBox(height: 10),
-          Text('ЧАЕК ИЧИНДЕ ЖҮРҮҮЧҮ ТАКСИЛЕР'),
-          SizedBox(height: 30),
-          SizedBox(
-            width: double.infinity,
-            height: 300,
-            child: ChaekBishkekScroll(),
-          ),
-          SizedBox(height: 10),
-          Text('ЖУМГАЛ РАЙОНУ ИЧИНДЕ ЖҮРҮҮЧҮ ТАКСИЛЕР'),
-          SizedBox(
-            width: double.infinity,
-            height: 300,
-            child: ChaekBishkekScroll(),
+            'Жарыя берүү 0999 29-12-10',
           ),
         ],
       ),
-    ));
+    );
   }
 }
 
@@ -73,10 +79,47 @@ class ChaekBishkekScroll extends StatelessWidget {
                 child: Container(
                   margin: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 170, 244, 218),
+                    color: Color.fromARGB(255, 171, 249, 211),
                     borderRadius: BorderRadius.circular(16.0),
                   ),
-                  clipBehavior: Clip.antiAlias,
+                  child: const Center(
+                    child: Padding(
+                      padding: EdgeInsets.all(10.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(height: 100),
+                          Text(
+                            'Toyota Camry унаасы Бишкек шаарына чыгат.ksljjflsdfjl dsfjkldsfkjndsfjdfj dfksdfpewfd podfejlsa/ajsgjdg pkwefpdvlsdj dfglkjdlfgdfg efglkjdf.',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontFamily: 'OpenSans',
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                '10.10.24. 11:00',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontFamily: 'OpenSans',
+                                ),
+                              ),
+                              Text(
+                                'Тел: 0500202020',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontFamily: 'OpenSans',
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -89,28 +132,24 @@ class ChaekBishkekScroll extends StatelessWidget {
               ),
             ),
             const Positioned(
-              left: 150,
               top: 50,
+              right: 50,
               child: Text(
-                'Тайота Camry',
+                'Toyota Camry',
                 style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 25.0,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Roboto-Black',
+                  fontSize: 22,
+                  fontFamily: 'OpenSans',
                 ),
               ),
             ),
             const Positioned(
-              left: 23,
-              top: 140,
+              top: 80,
+              right: 50,
               child: Text(
-                'Бүгүн Бишкекке 3 орун бар, ала кетем.',
+                'Чаек-Бишкек',
                 style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Roboto-Black',
+                  fontSize: 22,
+                  fontFamily: 'OpenSans',
                 ),
               ),
             ),
