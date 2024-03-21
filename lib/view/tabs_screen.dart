@@ -1,4 +1,5 @@
 import 'package:advertt/view/animal_sell_screen.dart';
+import 'package:advertt/view/properties_sell_screen.dart';
 import 'package:advertt/view/taxi_screen.dart';
 import 'package:advertt/view/car_sell_screen.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class _HomeView2State extends State<HomeView2> {
     const TaxiScreen(),
     const AnimalSellScreen(),
     const CarSellScreen(),
-    const CarSellScreen(),
+    const PropertiesScreen(),
   ];
   @override
   Widget build(BuildContext context) {

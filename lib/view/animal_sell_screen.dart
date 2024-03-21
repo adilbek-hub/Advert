@@ -38,7 +38,7 @@ class AnimalSellScreen extends StatelessWidget {
                         ),
                         SizedBox(height: 20),
                         Text(
-                          'Выгодные предложения от Alibaba',
+                          'Кайырма айылында 2 жашар бука сатылат.',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -46,7 +46,7 @@ class AnimalSellScreen extends StatelessWidget {
                         ),
                         SizedBox(height: 20),
                         Text(
-                          'Ищите товары по выгодным ценам',
+                          'Ээсинин аты Турат',
                           style: TextStyle(
                             fontSize: 16,
                             fontStyle: FontStyle.italic,
@@ -57,7 +57,7 @@ class AnimalSellScreen extends StatelessWidget {
                           onPressed: () {
                             // Действия при нажатии на кнопку
                           },
-                          child: Text('Узнать больше'),
+                          child: Text('Толук маалымат'),
                         ),
                       ],
                     ))

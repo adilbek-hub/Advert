@@ -73,13 +73,13 @@ class ChaekBishkekScroll extends StatelessWidget {
           clipBehavior: Clip.antiAliasWithSaveLayer,
           children: [
             SizedBox(
-              width: 350,
+              width: 340,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  margin: const EdgeInsets.all(10),
+                child: DecoratedBox(
+                  //   margin: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 171, 249, 211),
+                    color: Color.fromARGB(255, 5, 69, 230).withOpacity(0.1),
                     borderRadius: BorderRadius.circular(16.0),
                   ),
                   child: const Center(
